@@ -1,0 +1,248 @@
+/* Parallax scrolling based on Jonathan Nicol's tutorial @ f6design.com */
+
+/* HTML5 display-role reset for older browsers */
+article, cite, blockquote, section, footer, header, nav, section {
+	display: block;
+}
+
+/* Page structure & Typography*/
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+	
+body {
+    background: #95cbd6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#95cbd6, #3c4c8c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#95cbd6, #3c4c8c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#95cbd6, #3c4c8c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#95cbd6, #3c4c8c); /* Standard syntax */
+	margin: 0; padding: 0;
+	font-family: arial;
+	color: #ffffff;
+	font-size: 112.5%;
+	line-height: 1.4em;
+	text-align: center;
+	height: 7344px;
+
+	}
+#logo{ position:absolute;
+top: 0px;
+width: 100%;
+}
+
+#panel1{ position:absolute;
+top: 447px;
+border-radius:50%;
+
+}
+#panel2{ position:absolute;
+top: 1100px;
+border-radius:80%;
+width:60%;
+margin:0 auto;
+}
+#panel3{ position:absolute;
+top: 2300px;
+border-radius:80%;
+width:60%;
+margin:0 auto;
+}
+#panel4{ position:absolute;
+top: 3600px;
+border-radius:80%;
+width:60%;
+margin:0 auto;
+}
+#panel5 {
+	position:absolute;
+	top:5000px;
+    border-radius:80%;
+    width:60%;
+    margin:0 auto;
+}
+
+#bg1{
+	background-position: top 300px , left 0px ;
+}
+#bg2{
+	background-position: bottom 200px , left 0px ;
+}
+	
+/* Navigation*/
+
+nav	{
+	z-index: 4;
+	position: fixed;
+	top: 0px;
+	background-color: #181818;
+	width: 100%;
+	}
+
+nav ul	{list-style-type: none;}
+
+nav ul li	{display: inline;}
+
+nav ul li a	{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 20px;}
+	
+nav	ul li a:hover	{color: #c0b3cc;}
+
+nav	ul li a.active	{color: #ab88c9;}
+
+/* Parallax Content*/
+section 
+{
+background-color:#393939;
+}
+.content{
+width:50%;
+margin:0 auto;
+padding-top:80px;
+padding-bottom:150px;
+
+}
+.content h2{
+    color: #c0b3cc;
+
+}
+
+/* Parallax Level 2 Images */
+#parallax-bg2 {
+	z-index: -1;
+	position: fixed;
+	left: 25%;
+	top: 0;
+	width: 1200px;
+	margon-left: -600px;
+}
+#bg2-1{
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+#bg2-2{
+	position: absolute;
+	top: 850px;
+	left: 450px;
+}
+#bg2-3{
+	position:absolute;
+	top:1450px;
+	right:200px;
+}
+#bg2-4{
+	position: absolute;
+	top: 1650px;
+	left: -200px;
+}
+
+/* Parallax Level 1 Images */
+#parallax-bg1 {
+	z-index:-2;
+	position:fixed;
+	left: 25%;
+	top:0;
+	width: 1200px;
+	margin-left: -600px;
+}
+
+#bg1-1{
+	position: absolute;
+	top: 380px;
+	left: 600px;
+}
+#bg1-2{
+	position: absolute;
+	top: 750px;
+	left: 0px;
+}
+#bg1-3{
+	position:absolute;
+	top:1200px;
+	right:10px;
+}
+#bg1-4{
+	position: absolute;
+	top: 980px;
+	left: 1500px;
+}
+
+
+#stage{
+ position: absolute;
+    top:6708px;
+    left:30%;
+
+}
+#scene1{
+   z-index: 2;
+  position: relative;
+  top: 1180px;
+  padding-left:50%;
+display:inline-block;
+
+}
+#scene2{
+   z-index: 2;
+  position: relative;
+  top: 1750px;
+  padding-left:50%;
+
+
+}
+#scene3{
+   z-index: 2;
+  position: relative;
+  top: 2300px;
+  padding-left:50%;
+
+
+}
+#scene4{
+  position: relative;
+  top: 3100px;
+  padding-left:50%;
+
+
+}
+#scene41{
+ display:block;
+  position: relative;
+  top: 3200px;
+  padding-left:30%;
+
+
+}
+#scene5{
+    z-index: 2;
+ display:inline-block;
+  position: relative;
+  top: 4400px;
+
+
+
+}
+#scene6{
+    z-index:2;
+ display:inline-block;
+  position: relative;
+  top: 4400px;
+
+
+
+}
+#scene7{
+   z-index:1;
+ display:block;
+  position: relative;
+  top: 3860px;
+
+
+
+}
+
+
+

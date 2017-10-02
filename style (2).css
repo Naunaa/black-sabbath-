@@ -1,0 +1,53 @@
+/* Parallax scrolling based on Jonathan Nicol's tutorial @ f6design.com */
+
+/* HTML5 display-role reset for older browsers */
+article, cite, blockquote, section, footer, header, nav, section {
+	display: block;
+}
+
+/* Page structure & Typography*/
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+	
+body {
+	margin: 0; padding: 0;
+	font-family: arial;
+	color: #ffffff;
+	font-size: 112.5%;
+	line-height: 1.4em;
+	text-align: center;
+	}
+
+
+/* Navigation*/
+
+nav	{
+	z-index: 4;
+	position: fixed;
+	top: 0px;
+	background-color: #181818;
+	width: 100%;
+	}
+
+nav ul	{list-style-type: none;}
+
+nav ul li	{display: inline;}
+
+nav ul li a	{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 20px;}
+	
+nav	ul li a:hover	{color: #ee6557;}
+
+nav	ul li a.active	{color: #16a6b6;}
+	
+/* Parallax Content*/
+
+
+/* Parallax Level 2 Images */
+
+
+/* Parallax Level 1 Images */
